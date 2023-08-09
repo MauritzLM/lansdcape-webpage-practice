@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+nav ul,
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+/* Services section */
+.services-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-container img {
+  width: 300px;
+  /* height: 100%; */
+}
+
+/* Footer */
+footer {
+  display: flex;
+}

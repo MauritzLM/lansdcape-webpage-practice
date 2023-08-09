@@ -1,0 +1,1 @@
+// faq section, question - answer
