@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import Error from './pages/error.jsx';
+import ServicesPage from './pages/services.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />
   },
+  {
+    path: '/services',
+    element: <ServicesPage />
+  }
 ]);
 
 
