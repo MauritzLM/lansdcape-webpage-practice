@@ -5,6 +5,9 @@ import service_2_large from './images/service2-large.png';
 // import service_2_mobile from './images/service2-mobile.png';
 
 // project images
+import project_1_image from './images/project1.png';
+import project_2_image from './images/project2.png';
+import project_3_image from './images/project3.png';
 
 
 // services
@@ -29,7 +32,73 @@ export const services = [
 
 
 // projects
-
+export const projects = [
+    {
+        id: 1,
+        title: 'project1 title',
+        testimonial: 'Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum.',
+        clientName: '- client 1',
+        image: project_1_image,
+        imgAlt: 'text'
+    },
+    {
+        id: 2,
+        title: 'project2 title',
+        testimonial: 'Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum.',
+        clientName: '- client 2',
+        image: project_2_image,
+        imgAlt: 'text'
+    },
+    {
+        id: 3,
+        title: 'project3 title',
+        testimonial: 'Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum.',
+        clientName: '- client 3',
+        image: project_3_image,
+        imgAlt: 'text'
+    }
+];
 
 
 // products
+export const designProducts = [
+    {
+        id: 111,
+        name: '2d design',
+        features: ['feature 1', 'feature 2', 'feature 3'],
+        price: '200'
+    },
+    {
+        id: 112,
+        name: '3d design',
+        features: ['feature 1', 'feature 2', 'feature 3'],
+        price: '300'
+    },
+    {
+        id: 113,
+        name: 'design and installation',
+        features: ['feature 1', 'feature 2', 'feature 3'],
+        price: '500'
+    }
+];
+
+export const maintenanceProducts = [
+    {
+        id: 114,
+        name: 'monthly maintenance',
+        features: ['feature 1', 'feature 2', 'feature 3'],
+        price: '200'
+    },
+    {
+        id: 115,
+        name: 'seasonal maintenance',
+        features: ['feature 1', 'feature 2', 'feature 3'],
+        price: '200'
+    },
+    {
+        id: 116,
+        name: 'garden analysis',
+        features: ['feature 1', 'feature 2', 'feature 3'],
+        price: '200'
+    }
+];
