@@ -12,7 +12,7 @@ function Services() {
                             <picture>
                                 <source media="(max-width: 799px)" srcSet={item.image_mobile} />
                                 <source media="(min-width: 800px)" srcSet={item.image_large} />
-                                <img src={item.image_large} alt={item.imgAlt} />
+                                <div><img src={item.image_large} alt={item.imgAlt} /></div>
                             </picture>
 
                             <p>{item.description}</p>
