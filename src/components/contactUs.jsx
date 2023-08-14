@@ -18,7 +18,7 @@ function ContactUs() {
                         <input name="email" type="email"></input>
 
                         <label htmlFor="message">Your message</label>
-                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="" cols="30" rows="5"></textarea>
 
                         <button>Submit</button>
                     </form>
