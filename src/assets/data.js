@@ -35,24 +35,24 @@ export const services = [
 export const projects = [
     {
         id: 1,
-        title: 'project1 title',
-        testimonial: 'Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum.',
+        title: 'project title',
+        testimonial: '"Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum."',
         clientName: '- client 1',
         image: project_1_image,
         imgAlt: 'text'
     },
     {
         id: 2,
-        title: 'project2 title',
-        testimonial: 'Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum.',
+        title: 'project title',
+        testimonial: '"Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum."',
         clientName: '- client 2',
         image: project_2_image,
         imgAlt: 'text'
     },
     {
         id: 3,
-        title: 'project3 title',
-        testimonial: 'Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum.',
+        title: 'project title',
+        testimonial: '"Et leo duis ut diam quam. Vel elit scelerisque mauris pellentesque. Euismod elementum nisi quis eleifend quam adipiscing vitae. Iaculis eu non diam phasellus vestibulum."',
         clientName: '- client 3',
         image: project_3_image,
         imgAlt: 'text'
@@ -100,5 +100,34 @@ export const maintenanceProducts = [
         name: 'garden analysis',
         features: ['feature 1', 'feature 2', 'feature 3'],
         price: '200'
+    }
+];
+
+// faq 
+export const faq = [
+    {
+        id: 'q1',
+        question: 'question1',
+        answer: 'answer to question'
+    },
+    {
+        id: 'q2',
+        question: 'question2',
+        answer: 'answer to question'
+    },
+    {
+        id: 'q3',
+        question: 'question3',
+        answer: 'answer to question'
+    },
+    {
+        id: 'q4',
+        question: 'question4',
+        answer: 'answer to question'
+    },
+    {
+        id: 'q5',
+        question: 'question5',
+        answer: 'answer to question'
     }
 ];
