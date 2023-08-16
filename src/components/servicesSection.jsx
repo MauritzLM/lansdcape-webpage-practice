@@ -15,8 +15,10 @@ function Services() {
                                 <div><img src={item.image_large} alt={item.imgAlt} /></div>
                             </picture>
 
-                            <p>{item.description}</p>
-                            <button>View plans</button>
+                            <div>
+                                <p>{item.description}</p>
+                                <button>View plans</button>
+                            </div>
                         </div>
 
                     })}

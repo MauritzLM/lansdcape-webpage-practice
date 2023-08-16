@@ -6,7 +6,7 @@ function Products({ service, products }) {
         <>
 
             <h2>{service}</h2>
-            <div>
+            <div className="products-container">
                 {products?.map((item) => {
                     return <div className="product-card" key={item.id}>
                         <h3>{item.name}</h3>
@@ -19,7 +19,7 @@ function Products({ service, products }) {
                         </ul>
 
                         <p>starting at</p>
-                        <p>{`$ ${item.price}`}</p>
+                        <p className="price">{`$ ${item.price}`}</p>
 
                         <button>Place order</button>
                     </div>
