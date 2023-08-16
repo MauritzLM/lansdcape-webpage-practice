@@ -7,9 +7,11 @@ function HomePage() {
     return (
         <>
             <Hero />
-            <Services />
-            <Projects />
-            <ContactUs />
+            <main>
+                <Services />
+                <Projects />
+                <ContactUs />
+            </main>
         </>
     )
 }
