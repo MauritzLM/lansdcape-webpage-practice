@@ -25,5 +25,3 @@ function Faq({ faq }) {
 }
 
 export default Faq;
-
-// click on div toggle hidden class on last p element, rotate svg .5turn
