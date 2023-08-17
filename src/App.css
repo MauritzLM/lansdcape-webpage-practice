@@ -115,6 +115,8 @@ nav button svg {
   width: 40px;
 }
 
+
+
 /* Hero Section */
 header {
   position: relative;
@@ -221,6 +223,7 @@ section>h2 {
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
+  padding-bottom: 2em;
 }
 
 .projects-container .project-card {
@@ -312,6 +315,7 @@ form button {
   background-color: #55624C;
   color: white;
   padding: 1em .5em;
+  text-align: center;
 }
 
 .services-info h1 {
@@ -343,6 +347,7 @@ section .product-card {
   gap: 0;
   padding: 1.4em 1em;
   box-shadow: 0px 4px 4px 1px rgba(97, 97, 97, 0.247);
+  border-radius: 5px;
 }
 
 .product-card ul {
@@ -480,24 +485,6 @@ footer a {
 /* Media Queries */
 
 @media screen and (min-width: 800px) {
-  nav ul {
-    position: static;
-    flex-direction: row;
-    background-color: inherit;
-    color: black;
-    line-height: 1;
-    justify-self: center;
-  }
-
-  nav ul a {
-    color: black;
-
-  }
-
-  nav p,
-  nav button {
-    display: none;
-  }
 
   header {
     background-image: url("./assets/images/landscaping1.png");
@@ -522,12 +509,85 @@ footer a {
     font-size: 3rem;
   }
 
+  .hero p {
+    width: fit-content;
+  }
+
   .hero-info {
     font-size: 1.8rem;
   }
 
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  nav ul {
+    position: static;
+    flex-direction: row;
+    background-color: inherit;
+    color: black;
+    line-height: 1;
+    justify-self: center;
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 .7em;
+  }
+
+  nav ul a {
+    color: black;
+  }
+
+  nav p,
+  nav button {
+    display: none;
+  }
+
+  .current-page-tab {
+    background-color: #346A1F;
+  }
+
+  .current-page-tab a {
+    color: white;
+  }
+
+  .services-info {
+    padding: .4em;
+  }
+
+  .services-info h1 {
+    font-size: 3rem;
+    margin-top: .5em;
+  }
+
+  .services-info p {
+    margin-top: 0;
+  }
+
+  .projects-container picture div {
+    width: 330px;
+    height: 300px;
+  }
+
+  .projects-container .project-card {
+    width: 380px;
+    height: 570px;
+  }
+
   .contact-section form {
     width: 500px;
+  }
+
+  section .product-card {
+    width: 380px;
+    height: 400px;
+    justify-content: space-around;
   }
 
   footer {
@@ -547,11 +607,7 @@ footer a {
     background-color: #346A1F;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
+
 
   section {
     display: flex;
@@ -575,9 +631,11 @@ footer a {
     width: 80%;
   }
 
-  /* .services-container {
-    justify-content: space-between;
-  } */
+  .services-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+  }
 
   .services-container .service-card {
     grid-template-areas: "heading ."
@@ -586,7 +644,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
 
-    max-width: 45%;
+    /* max-width: 45%; */
   }
 
   .service-card h3 {
@@ -622,6 +680,7 @@ footer a {
     justify-content: center;
     gap: 2em;
     padding-bottom: 3em;
+    flex-wrap: wrap;
   }
 
   .contact-section-info {
@@ -641,9 +700,39 @@ footer a {
   .maintenance-section .products-container,
   .design-section .products-container {
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .faq-question-container {
     width: 65%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+
+  header {
+    height: 500px;
+  }
+
+  .hero-info {
+    top: 8.5em;
+    right: 10em;
+  }
+
+  /* .projects-container {
+    justify-content: space-between;
+  } */
+
+
+  .services-container {
+    justify-content: space-between;
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .services-container .service-card {
+    max-width: 40%;
   }
 }
