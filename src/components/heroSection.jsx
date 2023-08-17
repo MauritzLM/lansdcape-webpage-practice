@@ -5,7 +5,7 @@ function Hero() {
             <header>
                 <div className="hero">
                     <h1>The Landscaping Company</h1>
-                    <p>Your Garden is our Passion</p>
+                    <p>Your Garden is our Passion Project</p>
                     <button>Learn more</button>
                 </div>
 
