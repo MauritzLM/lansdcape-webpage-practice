@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ currentPage }) {
+
     return (
         <>
             <nav>
@@ -10,8 +11,8 @@ function Navbar() {
 
                 <p>The Landscaping Company</p>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/services">Services</Link></li>
+                    <li className={`${'home' == currentPage && "current-page-tab"}`}><Link to="/">Home</Link></li>
+                    <li className={`${'services' == currentPage && "current-page-tab"}`}><Link to="/services">Services</Link></li>
                     <li>About</li>
                 </ul>
 

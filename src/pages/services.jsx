@@ -10,10 +10,10 @@ import { designProducts, maintenanceProducts, faq } from "../assets/data";
 function ServicesPage() {
     return (
         <>
-            <Navbar />
+            <Navbar currentPage={'services'} />
             <section className="services-info">
-                <h1>Welcome to our service page</h1>
-                <p>Here you will find our service followed by our FAQ</p>
+                <h1>Welcome to our services page</h1>
+                <p>Here you will find the services we offer followed by our FAQ</p>
             </section>
 
             <section className="design-section">

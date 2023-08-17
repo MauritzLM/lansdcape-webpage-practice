@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar currentPage={'home'} />
       <HomePage />
       <Footer />
     </>
